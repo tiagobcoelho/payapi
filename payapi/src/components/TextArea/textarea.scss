@@ -1,0 +1,25 @@
+.textarea{
+  --input-color: #{$secondary-color};
+
+  border: none;
+  color: var(--input-color);
+  font-size: 15px;
+  border-bottom: 1px solid var(--input-color);
+  padding: 0 0 16px 16px;
+  min-height: 110px;
+  opacity: .5;
+  outline: none;
+
+  &::placeholder {
+    color: var(--input-color);
+    font-size: 15px;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &--error {
+    --input-color: #{$error-color};
+  }
+}

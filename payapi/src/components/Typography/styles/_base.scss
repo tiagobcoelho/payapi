@@ -1,0 +1,34 @@
+.text {
+  --text-color: #{$secondary-color};
+
+  color: var(--text-color);
+
+  &--type {
+    @each $typography-style-name in map-keys($typography-styles) {
+      &-#{$typography-style-name} {
+        @include typography($typography-style-name);
+      }
+    }
+  }
+
+  &--color-primary {
+    --text-color: #{$primary-color};
+  }
+  
+  &--color-dark {
+    --text-color: #{$complementary-dark};
+  }
+  
+  &--color-light {
+    --text-color: #{$primary-light-color};
+  }
+  
+  &--color-secondary-light {
+    --text-color: #{$secondary-light-color};
+  }
+  
+  &--color-faded {
+    opacity: .5;
+  }
+
+}

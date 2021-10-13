@@ -1,0 +1,44 @@
+$typography-styles: (
+  h1-big: (
+    font-family: "DM Serif Display",
+    font-size: 72px,
+    line-height: 72px,
+  ),
+  h1-small: (
+    font-family: "DM Serif Display",
+    font-size: 56px,
+    line-height: 56px,
+  ),
+  h2: (
+    font-family: "DM Serif Display",
+    font-size: 48px,
+    line-height: 56px,
+  ),
+  h3-big: (
+    font-family: "DM Serif Display",
+    font-size: 32px,
+    line-height: 40px,
+  ),
+  h3-small: (
+    font-family: "DM Serif Display",
+    font-size: 18px,
+    line-height: 25px,
+  ),
+  h4: (
+    font-family: "DM Serif Display",
+    font-size: 24px,
+    line-height: 32px,
+  ),
+  body: (
+    font-family: "Public Sans",
+    font-weight: 400,
+    font-size: 15px,
+    line-height: 28px,
+  ),
+  body-bold: (
+    font-family: "Public Sans",
+    font-weight: 700,
+    font-size: 15px,
+    line-height: 28px,
+  ),
+);

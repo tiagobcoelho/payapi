@@ -1,0 +1,26 @@
+.input{
+  --input-color: #{$secondary-color};
+
+  border: none;
+  color: var(--input-color);
+  font-family: "Public Sans";
+  font-size: 15px;
+  border-bottom: 1px solid var(--input-color);
+  padding: 0 0 16px 16px;
+  opacity: .5;
+  outline: none;
+  resize: none;
+
+  &::placeholder {
+    color: var(--input-color);
+    font-size: 15px;
+  }
+
+  &:focus {
+    opacity: 1;
+  }
+
+  &--error {
+    --input-color: #{$error-color};
+  }
+}

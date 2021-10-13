@@ -1,0 +1,7 @@
+@mixin typography($typography-name, $typography: $typography-styles) {
+  $typography-value: map-get($typography, $typography-name);
+
+  @each $prop-name, $prop-value in $typography-value {
+    #{$prop-name}: $prop-value
+  }
+}
